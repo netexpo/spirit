@@ -31,7 +31,7 @@
     right: 0;
 
     div {
-      @include icon(50px, 2px, $white, 'arrow.svg', 14px); /*MIXIN connect*/
+      @include icon(50px, 2px, $white, 'arrow.svg', 14px); /*MIXIN connect @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin)*/
       cursor: pointer;
     }
   }

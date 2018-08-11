@@ -1,0 +1,9 @@
+.services {
+
+
+  @each $i in display, device, photo, louder {
+    .icon-#{$i} {
+    @include icon(125px, 4px, $orange, '#{$i}.png', 30px); /*MIXIN connect @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin)*/
+    }
+  }
+}

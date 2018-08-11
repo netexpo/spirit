@@ -22,6 +22,12 @@ body {
   font-family: 'OpenSans', SansSerif, serif;
   color: #666; }
 
+.mb-100 {
+  margin-bottom: 100px; }
+
+.mt-100 {
+  margin-top: 100px; }
+
 .font-size-12 {
   font-size: 12px; }
 
@@ -126,14 +132,14 @@ ul {
     left: 0;
     right: 0; }
     .header-scroll div {
-      height: 50px;
-      width: 50px;
+      min-height: 50px;
+      min-width: 50px;
       border-width: 2px;
       border-color: #fff;
       border-style: solid;
       border-radius: 50%;
       position: relative;
-      /*MIXIN connect*/
+      /*MIXIN connect @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin)*/
       cursor: pointer; }
       .header-scroll div::after {
         content: '';
@@ -176,9 +182,108 @@ ul {
   .team .title {
     color: #fff; }
   .team .photo {
-    width: 130px;
-    height: 130px;
+    min-width: 130px;
+    min-height: 130px;
     border-radius: 50%;
     background-color: #ccc; }
+
+.services .icon-display {
+  min-height: 125px;
+  min-width: 125px;
+  border-width: 4px;
+  border-color: #fcac45;
+  border-style: solid;
+  border-radius: 50%;
+  position: relative;
+  /*MIXIN connect @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin)*/ }
+  .services .icon-display::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 30px;
+    background-image: url("./source/icons/display.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+.services .icon-device {
+  min-height: 125px;
+  min-width: 125px;
+  border-width: 4px;
+  border-color: #fcac45;
+  border-style: solid;
+  border-radius: 50%;
+  position: relative;
+  /*MIXIN connect @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin)*/ }
+  .services .icon-device::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 30px;
+    background-image: url("./source/icons/device.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+.services .icon-photo {
+  min-height: 125px;
+  min-width: 125px;
+  border-width: 4px;
+  border-color: #fcac45;
+  border-style: solid;
+  border-radius: 50%;
+  position: relative;
+  /*MIXIN connect @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin)*/ }
+  .services .icon-photo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 30px;
+    background-image: url("./source/icons/photo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+.services .icon-louder {
+  min-height: 125px;
+  min-width: 125px;
+  border-width: 4px;
+  border-color: #fcac45;
+  border-style: solid;
+  border-radius: 50%;
+  position: relative;
+  /*MIXIN connect @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin)*/ }
+  .services .icon-louder::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 30px;
+    background-image: url("./source/icons/louder.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+
+.clients {
+  background-color: #000000;
+  color: #fff;
+  padding-bottom: 100px; }
+  .clients .title {
+    color: #fff; }
+
+.work {
+  padding-bottom: 100px; }
+  .work-filter span:nth-child(odd) {
+    cursor: pointer; }
+    .work-filter span:nth-child(odd):hover {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

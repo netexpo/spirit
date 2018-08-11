@@ -1,0 +1,11 @@
+.work {
+  padding-bottom: 100px;
+
+  &-filter span:nth-child(odd){
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

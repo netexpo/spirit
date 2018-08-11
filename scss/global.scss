@@ -5,8 +5,8 @@ $black: #000000;
 $white: #fff;
 
 @mixin icon($lenth,$bwidth, $bcolor, $iconUrl, $margin){
-  height: $lenth;
-  width: $lenth;
+  min-height: $lenth;
+  min-width: $lenth;
   border-width: $bwidth;
   border-color: $bcolor;
   border-style: solid;
@@ -31,6 +31,14 @@ $white: #fff;
 body {
   font-family: 'OpenSans', SansSerif, serif;
   color: $text-grey;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .font-size-12{
