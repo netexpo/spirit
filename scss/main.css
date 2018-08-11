@@ -1,0 +1,62 @@
+.navbar {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .navbar .nav-item.active {
+    position: relative; }
+    .navbar .nav-item.active::before, .navbar .nav-item.active::after {
+      content: '';
+      height: 3px;
+      width: 50%;
+      position: absolute;
+      bottom: 0; }
+    .navbar .nav-item.active::before {
+      left: 0;
+      background-color: 232323; }
+    .navbar .nav-item.active::after {
+      right: 0;
+      background-color: #fcac45; }
+
+.header {
+  position: relative;
+  height: 790px;
+  background-color: #000000;
+  background-image: url(/source/bg.jpg); }
+  .header-text {
+    padding-top: 300px; }
+    .header-text-top {
+      font-size: 44px; }
+    .header-text-brand {
+      color: #fcac45; }
+    .header-text-bottom {
+      font-size: 20px; }
+  .header-scroll {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0; }
+    .header-scroll div {
+      height: 50px;
+      width: 50px;
+      border-width: 2px;
+      border-color: #fff;
+      border-style: solid;
+      border-radius: 50%;
+      position: relative;
+      /*MIXIN connect*/ }
+      .header-scroll div::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 14px;
+        background-image: url("./source/icons/arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-style: normal;
+  src: url("./source/fonts/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 700;
+  font-style: normal;
+  src: url("./source/fonts/OpenSans-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 300;
+  font-style: normal;
+  src: url("./source/fonts/OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-style: italic;
+  src: url("./source/fonts/OpenSans-Italic.ttf") format("truetype"); }
+body {
+  font-family: 'OpenSans', SansSerif, serif;
+  color: #666; }
+
+.font-size-12 {
+  font-size: 12px; }
+
+.font-size-14 {
+  font-size: 14px; }
+
+.font-size-18 {
+  font-size: 18px; }
+
+.font-size-20 {
+  font-size: 20px; }
+
+.font-size-24 {
+  font-size: 24px; }
+
+.title-sm {
+  font-size: 34px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 40px;
+  color: #000000; }
+  .title-sm::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: #fcac45;
+    bottom: -5px;
+    left: 0px; }
+
+.title {
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 40px;
+  color: #000000; }
+  .title::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    background-color: #fcac45;
+    bottom: -15px;
+    left: calc(50% - 50px); }
+  .title::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 70px;
+    background-color: #fcac45;
+    bottom: -25px;
+    left: calc(50% - 35px); }
+
+ul {
+  list-style-image: url("./source/icons/list.png"); }
+  ul li {
+    margin-bottom: 12px; }
+
+.navbar {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .navbar .nav-item.active {
+    position: relative; }
+    .navbar .nav-item.active::before, .navbar .nav-item.active::after {
+      content: '';
+      height: 3px;
+      width: 50%;
+      position: absolute;
+      bottom: 0; }
+    .navbar .nav-item.active::before {
+      left: 0;
+      background-color: #232323; }
+    .navbar .nav-item.active::after {
+      right: 0;
+      background-color: #fcac45; }
+
+.header {
+  position: relative;
+  height: 790px;
+  background-image: url("./source/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*po vertykali i goryzontali roztjaguem img bg*/
+  background-color: #000000; }
+  .header-text {
+    padding-top: 300px; }
+    .header-text-top {
+      font-size: 44px; }
+    .header-text-brand {
+      color: #fcac45; }
+    .header-text-bottom {
+      font-size: 20px; }
+  .header-scroll {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0; }
+    .header-scroll div {
+      height: 50px;
+      width: 50px;
+      border-width: 2px;
+      border-color: #fff;
+      border-style: solid;
+      border-radius: 50%;
+      position: relative;
+      /*MIXIN connect*/
+      cursor: pointer; }
+      .header-scroll div::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 14px;
+        background-image: url("./source/icons/arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+
+.about-img {
+  background-image: url("./source/mac.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 60%; }
+  @media (max-width: 768px) {
+    .about-img {
+      background-size: 100%;
+      padding-top: 600px; } }
+.about .row {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  @media (max-width: 768px) {
+    .about .row {
+      padding-top: 400px; } }
+.about ul, .about p {
+  margin-bottom: 26px; }
+.about .icon {
+  margin-right: 6px;
+  margin-bottom: 3px; }
+
+.team {
+  background-color: #000000;
+  color: #fff;
+  padding-bottom: 100px; }
+  .team .title {
+    color: #fff; }
+  .team .photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #ccc; }
+
+/*# sourceMappingURL=style.css.map */

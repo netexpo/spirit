@@ -1,0 +1,32 @@
+.about {
+  
+  &-img {
+    background-image: url('./source/mac.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 60%;
+
+    @media (max-width: 768px) {
+      background-size: 100%;
+      padding-top: 600px;
+    }
+  }
+
+  .row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @media (max-width: 768px) {
+      padding-top: 400px;
+    }
+  }
+
+  ul, p {
+    margin-bottom: 26px;
+  }
+
+  .icon {
+    margin-right: 6px;
+    margin-bottom: 3px;
+  }
+}
